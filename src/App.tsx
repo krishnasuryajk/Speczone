@@ -1,0 +1,172 @@
+import { useState } from "react";
+import { motion, AnimatePresence, useScroll, useSpring } from "motion/react";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import BrandTicker from "./components/BrandTicker";
+import TrustStrip from "./components/TrustStrip";
+import ShowroomShowcase from "./components/ShowroomShowcase";
+import OpticalsShop from "./components/OpticalsShop";
+import SolutionsSection from "./components/SolutionsSection";
+import HeritageSection from "./components/HeritageSection";
+import AboutUs from "./components/AboutUs";
+import LensLab from "./components/LensLab";
+import LocationsSection from "./components/LocationsSection";
+import BlogSection from "./components/BlogSection";
+import HomeEyeCare from "./components/HomeEyeCare";
+import FooterSection from "./components/FooterSection";
+// import News from "./components/news";
+import { ArrowLeft, Sparkles, ShieldCheck, Home } from "lucide-react";
+import BrandsSection from "./components/BrandsSection";
+
+export default function App() {
+  const [view, setView] = useState<"home" | "booking">("home");
+
+  // Setup elegant scroll progress bar across the screen top
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
+  const handleOpenBooking = () => {
+    setView("booking");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleCloseBooking = () => {
+    setView("home");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handlePreSelectService = (serviceName: string) => {
+    setView("booking");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // Safe window-scrolling callback
+  const scrollToSection = (sectionId: string) => {
+    if (view !== "home") {
+      setView("home");
+      // Short delay to allow DOM render before scrolling
+      setTimeout(() => {
+        const el = document.getElementById(sectionId);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
+  return (
+    <div className="relative min-h-screen bg-zinc-950 text-white font-sans selection:bg-brand-blue selection:text-white">
+      {/* Top scroll-linked elegant reading progress bar */}
+      <motion.div
+        id="scroll-progress-indicator"
+        className="fixed top-0 left-0 right-0 h-[3px] bg-brand-blue origin-[0%] z-50 shadow-lg shadow-brand-blue/30"
+        style={{ scaleX }}
+      />
+
+      {/* Primary Sticky Header navigation */}
+      <Navbar
+        onBookClick={handleOpenBooking}
+        onNavigate={scrollToSection}
+      />
+
+      {/* Main Container */}
+      <main className="relative pt-[88px]">
+        <AnimatePresence mode="wait">
+          {view === "home" ? (
+            <motion.div
+              key="home-view"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -15 }}
+              transition={{ duration: 0.5 }}
+            >
+              {/* HERO HEADER */}
+              <HeroSection onScrollDown={() => scrollToSection("showroom-showcase")} />
+
+              {/* AUTOPLAY BRAND TICKER CAROUSEL */}
+              <BrandTicker />
+
+              {/* <BrandsSection/> */}
+
+              {/* OPTICALS SHOP & SELECTION CARTS (Section 04 of wireframe) */}
+              {/* <OpticalsShop /> */}
+
+              {/* SOLUTIONS PORTFOLIO GRID */}
+              <SolutionsSection onPreSelectService={handlePreSelectService} />
+
+              <LensLab />
+            
+              {/* ABOUT US & HERITAGE HISTORICAL STORY (Section 06 of wireframe) */}
+              <AboutUs />
+
+              {/* <News /> */}
+
+              {/* TRUST STRIP (Section 03 of wireframe) */}
+              <TrustStrip />
+
+              {/* PHYSICAL ATELIER MAPS/GRID */}
+              <LocationsSection />
+
+              <ShowroomShowcase />
+
+              {/* BLOG SECTIONS & DIGITAL EYE CARE TIPS (Section 07 of wireframe) */}
+              <BlogSection />
+            </motion.div>
+          ) : (
+            <motion.div
+              key="booking-view"
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -15 }}
+              transition={{ duration: 0.5 }}
+              className="space-y-4"
+            >
+              {/* Navigation Back Bar */}
+              <div className="bg-zinc-900/60 border-b border-white/5 py-4 px-6 md:px-12 backdrop-blur-md">
+                <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+                  <button
+                    onClick={handleCloseBooking}
+                    className="flex items-center gap-2 text-zinc-350 hover:text-brand-blue text-xs font-display tracking-widest font-black uppercase transition-colors group cursor-pointer"
+                  >
+                    <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
+                    Return to Luxury Boutique Home
+                  </button>
+
+                  <div className="flex items-center gap-4 text-[10px] font-mono text-zinc-450 uppercase">
+                    <span className="flex items-center gap-1">
+                      <ShieldCheck size={12} className="text-emerald-400" />
+                      Hygiene Compliant
+                    </span>
+                    <span className="h-3 w-[1px] bg-white/5" />
+                    <span className="flex items-center gap-1">
+                      <Sparkles size={12} className="text-brand-blue animate-pulse" />
+                      Free Clinical Checkup
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Dedicated Home Eye Care Portal View */}
+              <HomeEyeCare />
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </main>
+
+      {/* FOOTER & ACTIONS */}
+      <FooterSection
+        onBookClick={handleOpenBooking}
+        onNavigate={scrollToSection}
+      />
+    </div>
+  );
+}
