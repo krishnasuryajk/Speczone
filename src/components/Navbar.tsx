@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, Calendar, MapPin, Phone, Glasses } from "lucide-react";
+import logo from "../../assets/logo.png";
 
 interface NavbarProps {
   onBookClick: () => void;
@@ -14,10 +15,10 @@ export default function Navbar({ onBookClick, onNavigate }: NavbarProps) {
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
-    
+
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       // Toggle scrolled state
       setIsScrolled(currentScrollY > 50);
 
@@ -29,10 +30,10 @@ export default function Navbar({ onBookClick, onNavigate }: NavbarProps) {
       } else {
         setIsVisible(true); // Scrolling Up or At Top -> Show
       }
-      
+
       lastScrollY = currentScrollY;
     };
-    
+
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -57,29 +58,27 @@ export default function Navbar({ onBookClick, onNavigate }: NavbarProps) {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 transform ${
-          isVisible || isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"
-        } ${
-          isScrolled
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 transform ${isVisible || isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"
+          } ${isScrolled
             ? "bg-zinc-950/75 backdrop-blur-md border-b border-white/10 py-4 shadow-sm shadow-black/20"
             : "bg-transparent py-6"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+          {/* Brand Logo */}
           {/* Brand Logo */}
           <button
             id="nav-logo-btn"
             onClick={() => handleMenuClick("hero")}
-            className="group flex flex-col items-start focus:outline-none text-left"
+            className="group flex items-center focus:outline-none"
           >
-            <span className="font-display text-2xl md:text-3xl font-extrabold tracking-widest text-white group-hover:text-brand-blue transition-colors duration-300">
-              SZ
-            </span>
-            <span className="font-display text-[8px] tracking-[0.25em] text-zinc-400 group-hover:text-zinc-200 transition-colors duration-300 uppercase">
-              Spectacal Zone
-            </span>
+            <img
+              src={logo}
+              alt="Spectacal Zone Logo"
+              className="h-14 md:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            />
           </button>
- 
+
           {/* Desktop Navigation */}
           <nav id="desktop-nav" className="hidden md:flex items-center space-x-10">
             {menuItems.map((item) => (
@@ -96,7 +95,7 @@ export default function Navbar({ onBookClick, onNavigate }: NavbarProps) {
               </motion.button>
             ))}
           </nav>
- 
+
           {/* Actions */}
           <div className="hidden md:flex items-center space-x-6">
             <motion.button
@@ -111,7 +110,7 @@ export default function Navbar({ onBookClick, onNavigate }: NavbarProps) {
               BOOK APPOINTMENT
             </motion.button>
           </div>
- 
+
           {/* Mobile Menu Button */}
           <div className="flex items-center md:hidden gap-4">
             <button
@@ -133,7 +132,7 @@ export default function Navbar({ onBookClick, onNavigate }: NavbarProps) {
           </div>
         </div>
       </motion.header>
- 
+
       {/* Mobile Drawer */}
       <AnimatePresence>
         {isMobileMenuOpen && (
@@ -156,7 +155,7 @@ export default function Navbar({ onBookClick, onNavigate }: NavbarProps) {
                   {item.name.toUpperCase()}
                 </button>
               ))}
-              
+
               <button
                 id="mobile-book-appointment-btn"
                 onClick={() => {
@@ -169,7 +168,7 @@ export default function Navbar({ onBookClick, onNavigate }: NavbarProps) {
                 BOOK APPOINTMENT
               </button>
             </div>
- 
+
             {/* Mobile Drawer Footer info */}
             <div className="text-center text-zinc-400 font-sans text-xs space-y-2">
               <p className="flex items-center justify-center gap-1">

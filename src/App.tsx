@@ -131,30 +131,6 @@ export default function App() {
               transition={{ duration: 0.5 }}
               className="space-y-4"
             >
-              {/* Navigation Back Bar */}
-              <div className="bg-zinc-900/60 border-b border-white/5 py-4 px-6 md:px-12 backdrop-blur-md">
-                <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-                  <button
-                    onClick={handleCloseBooking}
-                    className="flex items-center gap-2 text-zinc-350 hover:text-brand-blue text-xs font-display tracking-widest font-black uppercase transition-colors group cursor-pointer"
-                  >
-                    <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
-                    Return to Luxury Boutique Home
-                  </button>
-
-                  <div className="flex items-center gap-4 text-[10px] font-mono text-zinc-450 uppercase">
-                    <span className="flex items-center gap-1">
-                      <ShieldCheck size={12} className="text-emerald-400" />
-                      Hygiene Compliant
-                    </span>
-                    <span className="h-3 w-[1px] bg-white/5" />
-                    <span className="flex items-center gap-1">
-                      <Sparkles size={12} className="text-brand-blue animate-pulse" />
-                      Free Clinical Checkup
-                    </span>
-                  </div>
-                </div>
-              </div>
 
               {/* Dedicated Home Eye Care Portal View */}
               <HomeEyeCare />

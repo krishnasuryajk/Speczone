@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Instagram, Mail, Phone, Clock, ArrowRight, Glasses, MapPin, Globe } from "lucide-react";
+import logo from "../../assets/logo.png";
 
 interface FooterSectionProps {
   onBookClick: () => void;
@@ -20,14 +21,13 @@ export default function FooterSection({ onBookClick, onNavigate }: FooterSection
             <button
               id="footer-logo-btn"
               onClick={() => onNavigate("hero")}
-              className="text-left flex flex-col focus:outline-none"
+              className="focus:outline-none group"
             >
-              <span className="font-display text-2xl font-black tracking-widest text-white hover:text-brand-blue transition-colors">
-                SZ
-              </span>
-              <span className="font-display text-[7px] tracking-[0.3em] text-zinc-450 uppercase">
-                SPECSZONE
-              </span>
+              <img
+                src={logo}
+                alt="SpecsZone Logo"
+                className="h-16 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
             </button>
             <p className="font-sans text-xs text-zinc-400 leading-relaxed font-light">
               Your hometown Curators of Premium Eyewear & Sculptors of Customised Precision lenses. Now gaining Expertise in Audiology!!
@@ -118,13 +118,13 @@ export default function FooterSection({ onBookClick, onNavigate }: FooterSection
               <li className="flex items-center gap-2">
                 <Phone size={13} className="text-brand-blue shrink-0" />
                 <a id="footer-phone-val-link" href="tel:04428200999" className="hover:text-white transition-colors">
-                  04428 200 999
+                   9840400614
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={13} className="text-brand-blue shrink-0" />
                 <a id="footer-email-val-link" href="mailto:info@specszone.com" className="hover:text-white transition-colors">
-                  info@specszone.com
+                  thepectaclezone@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2">

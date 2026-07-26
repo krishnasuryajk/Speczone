@@ -107,56 +107,39 @@ export const SOLUTIONS_DATA: Solution[] = [
 export const LOCATIONS_DATA: Location[] = [
   {
     id: 1,
-    name: "Anna Nagar",
+    name: "Avadi",
     city: "Chennai",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1000",
-    address: "Y-222, 5th Avenue, Anna Nagar, Chennai - 600040",
-    phone: "044 - 4261 1199",
-    hours: "10:30 AM - 8:30 PM (Mon - Sat), 10:30 AM - 7:30 PM (Sun)"
+    image: "https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&q=80&w=1000",
+    address: "No 617, TNHB Mig V Block, Avadi, Chennai, Tamil Nadu 600054",
+    phone: "098404 00561",
+    hours: "10:00 AM - 10:00 PM (Everyday)"
   },
   {
     id: 2,
-    name: "ECR",
+    name: "Choolaimedu",
     city: "Chennai",
-    image: "https://images.unsplash.com/photo-1522204538344-922f76ecc041?auto=format&fit=crop&q=80&w=1000",
-    address: "Plot 12, East Coast Road, Palavakkam, Chennai - 600041",
-    phone: "044 - 2449 3399",
-    hours: "10:30 AM - 8:30 PM (Mon - Sat), 10:30 AM - 7:30 PM (Sun)"
+    image: "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=1000",
+    address: "29, Anna Nedum Pathai, Choolaimedu, Chennai, Tamil Nadu 600094",
+    phone: "098404 00643",
+    hours: "10:00 AM - 10:00 PM (Everyday)"
   },
   {
     id: 3,
-    name: "Broadway",
+    name: "Mahalingapuram",
     city: "Chennai",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1000",
-    address: "189, Netaji Subhash Chandra Bose Rd, Broadway, Chennai - 600001",
-    phone: "044 - 2534 0999",
-    hours: "10:30 AM - 8:30 PM (Mon - Sat), Closed on Sunday"
+    image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=1000",
+    address: "No 146C, Raju Building, Kodambakkam High Rd, Mahalingapuram, Nungambakkam, Chennai, Greater Chennai, Tamil Nadu 600034",
+    phone: "098404 00561",
+    hours: "10:00 AM - 10:00 PM (Everyday)"
   },
   {
     id: 4,
-    name: "Alwarpet",
+    name: "Arumbakkam",
     city: "Chennai",
-    image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=1000",
-    address: "Cooperative Colony, Alwarpet, Chennai - 600018",
-    phone: "044 - 4200 9991",
-    hours: "10:30 AM - 8:30 PM (Mon - Sat), 10:30 AM - 7:30 PM (Sun)"
-  },
-  {
-    id: 5,
-    name: "Adayar",
-    city: "Chennai",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1000",
-    address: "Lattice Bridge Road, Adyar, Chennai - 600020",
-    phone: "044 - 2442 4499",
-    hours: "10:30 AM - 8:30 PM (Mon - Sat), 10:30 AM - 7:30 PM (Sun)"
-  },
-  {
-    id: 6,
-    name: "Race Course",
-    city: "Coimbatore",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1000",
-    address: "Red Fields, Race Course, Coimbatore - 641018",
-    phone: "0422 - 420 1959",
-    hours: "10:30 AM - 8:30 PM (Mon - Sat), 10:30 AM - 7:30 PM (Sun)"
+    image: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&q=80&w=1000",
+    address: "No:2/4, D-Block, oppt Arumbakkam Post Office, Annish Nagar, Q Block, MMDA Colony, Arumbakkam, Chennai, Greater Chennai, Tamil Nadu 600106",
+    phone: "098404 00561",
+    hours: "10:00 AM - 10:00 PM (Everyday)"
   }
 ];
+

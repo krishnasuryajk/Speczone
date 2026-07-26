@@ -215,7 +215,7 @@ export default function HomeEyeCare({ onClose, initialNotes = "", initialType = 
   return (
     <section 
       id="home-eye-care"
-      className="bg-[#0b0f19] text-slate-100 font-sans min-h-screen flex items-center justify-center p-4 md:p-8 relative overflow-hidden antialiased selection:bg-indigo-500 selection:text-white"
+      className="text-slate-100 font-sans min-h-screen flex items-center justify-center p-4 md:p-8 relative overflow-hidden antialiased selection:bg-indigo-500 selection:text-white"
     >
       {/* BACKGROUND GLOW EFFECTS */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none" />
@@ -331,40 +331,6 @@ export default function HomeEyeCare({ onClose, initialNotes = "", initialType = 
               <p className="text-slate-400 text-xs mt-1">Hover over underlined terms to inspect step details</p>
             </div>
 
-            <div className="flex items-center gap-3">
-              {/* Play / Pause toggle */}
-              <button
-                type="button"
-                onClick={togglePlay}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white text-xs font-mono transition-colors cursor-pointer"
-              >
-                {isPlaying ? (
-                  <>
-                    <Pause className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
-                    <span>Pause</span>
-                  </>
-                ) : (
-                  <>
-                    <Play className="w-3.5 h-3.5 text-emerald-400 fill-emerald-400" />
-                    <span>Play</span>
-                  </>
-                )}
-              </button>
-
-              <button
-                type="button"
-                onClick={runSequence}
-                className="p-1.5 rounded-lg bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white text-xs transition-colors cursor-pointer"
-                title="Restart Sequence"
-              >
-                <RefreshCw className="w-3.5 h-3.5" />
-              </button>
-
-              <div className="flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 px-3 py-1.5 rounded-lg text-xs font-mono text-slate-300">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                <span id="step-counter">Step {activeStep} of 5</span>
-              </div>
-            </div>
           </div>
 
           {/* ALTERNATING TIMELINE WRAPPER */}

@@ -108,7 +108,7 @@ export default function BrandTicker() {
       <div className="absolute inset-y-0 right-0 w-24 md:w-48 bg-gradient-to-l from-zinc-950 to-transparent z-20 pointer-events-none" />
 
       {/* Scrolling Marquee Container */}
-      <div className="relative flex items-center overflow-x-hidden py-10 bg-zinc-950/20 backdrop-blur-sm border-y border-white/5">
+      <div className="relative flex items-center overflow-x-hidden py-10 bg-zinc-950/20 backdrop-blur-sm ">
         <motion.div 
           className="flex gap-16 items-center shrink-0"
           animate={{ x: ["0%", "-33.333%"] }}

@@ -33,10 +33,7 @@ export default function LocationsSection() {
             {/* Region Toggles */}
             <div className="space-y-2 border-l border-white/10 pl-6">
               <div className="font-serif text-2xl text-white font-medium tracking-wider uppercase">
-                Chennai
-              </div>
-              <div className="font-serif text-lg text-zinc-500 font-light tracking-wide uppercase">
-                Coimbatore
+                Chennai Outlets
               </div>
             </div>
 
