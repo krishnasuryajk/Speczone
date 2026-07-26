@@ -14,6 +14,8 @@ import LocationsSection from "./components/LocationsSection";
 import BlogSection from "./components/BlogSection";
 import HomeEyeCare from "./components/HomeEyeCare";
 import FooterSection from "./components/FooterSection";
+import SmoothScroll from "./components/SmoothScroll";
+import SpiralFrameMatrix from "./components/SpiralFrameMatrix";
 // import News from "./components/news";
 import { ArrowLeft, Sparkles, ShieldCheck, Home } from "lucide-react";
 import BrandsSection from "./components/BrandsSection";
@@ -95,13 +97,12 @@ export default function App() {
               {/* AUTOPLAY BRAND TICKER CAROUSEL */}
               <BrandTicker />
 
-              {/* <BrandsSection/> */}
+              <SmoothScroll />
 
-              {/* OPTICALS SHOP & SELECTION CARTS (Section 04 of wireframe) */}
-              {/* <OpticalsShop /> */}
+               <SpiralFrameMatrix onPreSelectService={handlePreSelectService} />
 
               {/* SOLUTIONS PORTFOLIO GRID */}
-              <SolutionsSection onPreSelectService={handlePreSelectService} />
+              {/* <SolutionsSection onPreSelectService={handlePreSelectService} /> */}
 
               <LensLab />
             
