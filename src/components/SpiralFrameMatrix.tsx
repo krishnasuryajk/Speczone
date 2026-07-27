@@ -38,7 +38,7 @@ const SPIRAL_GLASSES: SpiralGlassItem[] = [
     material: "Surgical Beta-Titanium",
     origin: "Sabae, Japan",
     weight: "11.2g",
-    image: "https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&q=80&w=1000"
+    image: "/assets/img/Emporio armani.jpg"
   },
   {
     id: "sp-02",
@@ -50,7 +50,8 @@ const SPIRAL_GLASSES: SpiralGlassItem[] = [
     material: "Organic Cotton Acetate",
     origin: "Belluno, Italy",
     weight: "22.8g",
-    image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&q=80&w=1000"
+    image: "/assets/img/fossil.jpeg"
+
   },
   {
     id: "sp-03",
@@ -62,7 +63,8 @@ const SPIRAL_GLASSES: SpiralGlassItem[] = [
     material: "TR90 Ultra-Flex Polymer",
     origin: "Innsbruck, Austria",
     weight: "14.5g",
-    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=1000"
+    image: "/assets/img/IDEE.jpeg"
+
   },
 
   // Triad 2
@@ -76,7 +78,8 @@ const SPIRAL_GLASSES: SpiralGlassItem[] = [
     material: "Forged Carbon Alloy",
     origin: "Geneva, Switzerland",
     weight: "18.2g",
-    image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=1000"
+    image: "/assets/img/oakley.jpeg"
+
   },
   {
     id: "sp-05",
@@ -88,7 +91,8 @@ const SPIRAL_GLASSES: SpiralGlassItem[] = [
     material: "24k Plated Beta Titanium",
     origin: "Paris Atelier",
     weight: "13.8g",
-    image: "https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=1000"
+    image: "/assets/img/pierre cardin.jpeg"
+
   },
   {
     id: "sp-06",
@@ -100,7 +104,8 @@ const SPIRAL_GLASSES: SpiralGlassItem[] = [
     material: "Memory Flex Nitinol",
     origin: "Zurich, Switzerland",
     weight: "8.5g",
-    image: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=80&w=1000"
+    image: "/assets/img/Rayban.png"
+
   },
 
   // Triad 3
@@ -114,7 +119,8 @@ const SPIRAL_GLASSES: SpiralGlassItem[] = [
     material: "Plated Stainless Steel",
     origin: "Milan, Italy",
     weight: "16.4g",
-    image: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&q=80&w=1000"
+    image: "/assets/img/seventh street.jpg"
+
   },
   {
     id: "sp-08",
@@ -126,7 +132,8 @@ const SPIRAL_GLASSES: SpiralGlassItem[] = [
     material: "3K Carbon Fiber Weave",
     origin: "Stuttgart, Germany",
     weight: "12.6g",
-    image: "https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?auto=format&fit=crop&q=80&w=1000"
+    image: "/assets/img/stepper.jpg"
+
   },
   {
     id: "sp-09",
@@ -138,7 +145,8 @@ const SPIRAL_GLASSES: SpiralGlassItem[] = [
     material: "Cellulose Bio-Acetate",
     origin: "Kyoto, Japan",
     weight: "20.1g",
-    image: "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=1000"
+    image: "/assets/img/tommy hilfiger.jpeg"
+
   },
 
   // Additional 4 Items (Total 13)
@@ -152,7 +160,7 @@ const SPIRAL_GLASSES: SpiralGlassItem[] = [
     material: "Lightweight O-Matter Composite",
     origin: "Milano, Italy",
     weight: "48.2g",
-    image: "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&q=80&w=1000"
+    image: "/assets/img/Rayban meta.png"
   },
   {
     id: "sp-11",
@@ -164,7 +172,7 @@ const SPIRAL_GLASSES: SpiralGlassItem[] = [
     material: "Unobtainium & O-Matter",
     origin: "Foothill Ranch, USA",
     weight: "24.0g",
-    image: "https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&q=80&w=1000"
+    image: "/assets/img/oakley meta.jpeg"
   },
   {
     id: "sp-12",
@@ -176,7 +184,7 @@ const SPIRAL_GLASSES: SpiralGlassItem[] = [
     material: "Hand-Polished Bio Acetate",
     origin: "Paris, France",
     weight: "19.4g",
-    image: "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=1000"
+    image: "/assets/img/vogue.jpeg"
   },
   {
     id: "sp-13",
@@ -188,7 +196,7 @@ const SPIRAL_GLASSES: SpiralGlassItem[] = [
     material: "Optyl Ultra-Light Polymer",
     origin: "Padova, Italy",
     weight: "17.1g",
-    image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=1000"
+    image: "/assets/img/carrera.jpg"
   }
 ];
 

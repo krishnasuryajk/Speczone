@@ -28,7 +28,7 @@ const LENS_SCENARIOS: LensScenario[] = [
     badge: "ULTRA SUN SECURITY",
     beforeLabel: "Standard Lens (Blinded by Reflective Glare)",
     afterLabel: "Oculis Polarized (Zero-Reflection Contrast)",
-    bgImage: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=80&w=1200",
+    bgImage: "../assets/img/lens2.jpg",
     beforeClasses: "brightness-[1.3] saturate-[0.6] blur-[2px] contrast-[0.9]", // washed out & glaring
     afterClasses: "brightness-100 saturate-100 blur-0 contrast-105"
   },
@@ -42,7 +42,7 @@ const LENS_SCENARIOS: LensScenario[] = [
     badge: "HEV SHIELD RATED",
     beforeLabel: "Unfiltered HEV (Digital Strain & High Contrast Glare)",
     afterLabel: "Oculis Blue-Filter (Optimized Contrast Comfort)",
-    bgImage: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=1200",
+    bgImage: "../assets/img/bluelens.jpg    ",
     beforeClasses: "hue-rotate-[180deg] saturate-[1.4] brightness-[1.1] blur-[1px]", // blue-shifted & raw
     afterClasses: "sepia-[0.12] brightness-[0.98] contrast-[1.02] blur-0" // warm and balanced
   },
@@ -56,7 +56,7 @@ const LENS_SCENARIOS: LensScenario[] = [
     badge: "EASY-CLEAN SHIELD",
     beforeLabel: "Untreated Lens (Water Smudging & Fog Distortion)",
     afterLabel: "Oculis Hydro-Coat (Instant Water-Repelling Clarity)",
-    bgImage: "https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?auto=format&fit=crop&q=80&w=1200",
+    bgImage: "../assets/img/anti-reflections.jpg",
     beforeClasses: "blur-[6px] contrast-[0.85] saturate-[0.9]", // heavily water distorted
     afterClasses: "blur-0 contrast-100 saturate-100"
   }
