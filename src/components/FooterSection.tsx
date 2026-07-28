@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Instagram, Mail, Phone, Clock, ArrowRight, Glasses, MapPin, Globe } from "lucide-react";
-import logo from "../../assets/logo.png";
+import logo from "/assets/logo.png";
 
 interface FooterSectionProps {
   onBookClick: () => void;
@@ -16,7 +16,7 @@ export default function FooterSection({ onBookClick, onNavigate }: FooterSection
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10">
         {/* Left Columns (8/12 grid spacing) */}
         <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Brand info */}
+          {/* Brand info */} 
           <div className="space-y-4 md:col-span-1">
             <button
               id="footer-logo-btn"

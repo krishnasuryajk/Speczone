@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence, useScroll, useTransform, useSpring } from "motion/react";
 import { ArrowRight, Sparkles, CheckCircle, Smartphone, User, Phone, Calendar } from "lucide-react";
-import heroVideo from "../../assets/hero-video.mp4";
+import heroVideo from "/assets/hero-video.mp4";
 
 
 interface HeroSectionProps {

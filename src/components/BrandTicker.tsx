@@ -9,7 +9,7 @@ interface BrandLogo {
 
 const BRAND_LOGOS: BrandLogo[] = [
   {
-    name: "Ray-Ban",
+    name: "Rayban",
     origin: "Milano",
     fontStyle: "font-sans font-black uppercase tracking-[0.2em]",
     image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=500"
@@ -51,7 +51,7 @@ const BRAND_LOGOS: BrandLogo[] = [
     image: "https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&q=80&w=500"
   },
   {
-    name: "Ray-Ban Meta",
+    name: "Rayban Meta",
     origin: "Smart Eyewear",
     fontStyle: "font-sans font-black uppercase tracking-[0.2em]",
     image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=500"
@@ -126,7 +126,7 @@ export default function BrandTicker() {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
               <span 
-                className={`${brand.fontStyle} text-4xl sm:text-6xl lg:text-7xl text-zinc-400 hover:text-white transition-colors duration-300 hover:drop-shadow-[0_0_20px_rgba(10,100,255,0.6)]`}
+                className={`${brand.fontStyle} text-3xl sm:text-4xl lg:text-5xl text-zinc-400 hover:text-white transition-colors duration-300 hover:drop-shadow-[0_0_20px_rgba(10,100,255,0.6)]`}
               >
                 {brand.name}
               </span>

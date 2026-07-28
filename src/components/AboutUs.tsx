@@ -4,25 +4,25 @@ import { Award, History, Sparkles, X, Globe, UserCheck, Eye, Compass } from "luc
 
 const GALLERY_IMAGES = [
   {
-    src: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1000",
+    src: "/assets/img/vintageopticals2.jpeg",
     tagline: "[ LEGACY SHOWROOM ]",
     title: "SPECTACAL ZONE",
     location: "Broadway Boutique, Chennai"
   },
   {
-    src: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&q=80&w=1000",
+    src: "/assets/img/traditionaloptical.jpeg",
     tagline: "[ CLINICAL EXCELLENCE ]",
     title: "PRECISION WAVEFRONT DIAGNOSTICS",
     location: "Advanced Clinical Labs"
   },
   {
-    src: "https://images.unsplash.com/photo-1591076482161-42ce6da69f67?auto=format&fit=crop&q=80&w=1000",
+    src: "/assets/img/premiumopticall.jpeg",
     tagline: "[ ARTISANAL DESIGNERS ]",
     title: "COUTURE EYEWEAR SELECTION",
     location: "Anna Nagar & Coimbatore Ateliers"
   },
   {
-    src: "https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&q=80&w=1000",
+    src: "/assets/img/modernoptical.jpeg",
     tagline: "[ METICULOUS CRAFTSMANSHIP ]",
     title: "BESPOKE OPTICAL SCULPTING",
     location: "Lens-Crafting Facility"

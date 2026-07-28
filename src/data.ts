@@ -109,7 +109,7 @@ export const LOCATIONS_DATA: Location[] = [
     id: 1,
     name: "Avadi",
     city: "Chennai",
-    image: "../assets/img/opticalstore1.jpg ",
+    image: "/assets/img/opticalstore1.jpg ",
     address: "No 617, TNHB Mig V Block, Avadi, Chennai, Tamil Nadu 600054",
     phone: "098404 00561",
     hours: "10:00 AM - 10:00 PM (Everyday)"
@@ -118,16 +118,16 @@ export const LOCATIONS_DATA: Location[] = [
     id: 2,
     name: "Choolaimedu",
     city: "Chennai",
-    image: "../assets/img/opticalshop2.jpg",
+    image: "/assets/img/opticalshop2.jpg",
     address: "29, Anna Nedum Pathai, Choolaimedu, Chennai, Tamil Nadu 600094",
     phone: "098404 00643",
     hours: "10:00 AM - 10:00 PM (Everyday)"
   },
   {
     id: 3,
-    name: "Mahalingapuram",
+    name: "Nungambakkam",
     city: "Chennai",
-    image: "../assets/img/opticalshop3.jpg",
+    image: "/assets/img/opticalshop3.jpg",
     address: "No 146C, Raju Building, Kodambakkam High Rd, Mahalingapuram, Nungambakkam, Chennai, Greater Chennai, Tamil Nadu 600034",
     phone: "098404 00561",
     hours: "10:00 AM - 10:00 PM (Everyday)"
@@ -136,7 +136,7 @@ export const LOCATIONS_DATA: Location[] = [
     id: 4,
     name: "Arumbakkam",
     city: "Chennai",
-    image: "../assets/img/opticalshop4.jpg",
+    image: "/assets/img/opticalshop4.jpg",
     address: "No:2/4, D-Block, oppt Arumbakkam Post Office, Annish Nagar, Q Block, MMDA Colony, Arumbakkam, Chennai, Greater Chennai, Tamil Nadu 600106",
     phone: "098404 00561",
     hours: "10:00 AM - 10:00 PM (Everyday)"
@@ -145,7 +145,7 @@ export const LOCATIONS_DATA: Location[] = [
     id: 5,
     name: "T. Nagar",
     city: "Chennai",
-    image: "../assets/img/opticalstore5.jpg",
+    image: "/assets/img/opticalstore5.jpg",
     address: "52, S Usman Road, Kannammapet, T.Nagar, Chennai, Greater Chennai, Tamil Nadu 600017",
     phone: "098404 00395",
     hours: "10:00 AM - 10:00 PM (Everyday)"
